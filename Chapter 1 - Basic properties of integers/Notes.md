@@ -184,4 +184,31 @@ Let $p$ be prime, and let $a, b \in \mathbb{Z}$. Then $p \mid ab$ implies that $
 
 <ins> **Proof for Theorem 1.10** </ins>
 
-We have $p \mid ab$. If $p \mid a$, then we are done :heart:
+We have $p \mid ab$. If $p \mid a$, then we are done :grinning:. If $p \nmid a$, then $gcd(a, p) = 1$, plus we have $p \mid ab$. Therefore, from ***Theorem 1.9***, $p \mid b$.
+
+<ins> **Exercise Takeaways** </ins>
+
+**1.8** : Let $\mathbb{I}$ be the non-empty set of integers that is closed under additions only. Then if $-a \in \mathbb{I}, \forall a \in \mathbb{I}$, $\mathbb{I}$ is an ideal.
+
+**1.9** : For all integers $a, b, c$, we have :
++ $gcd(a, b) = gcd(b, a)$
++ $gcd(a, b) = |a| \Longleftrightarrow a \mid b$
++ $gcd(a, 0) = gcd(a, a) = |a|$ and $gcd(a, 1) = 1$
++ $gcd(ca, cb) = |c|gcd(a, b)$
+
+**1.10** : For all integers $a, b$ with $d = gcd(a, b) \neq 0$, we have : 
+$$gcd\left(\dfrac{a}{d}, \dfrac{b}{d}\right) = 1$$
+
+**1.11** : Let $n$ be an integer. If $a, b$ are relatively prime integers, each of which divides $n$, then $ab \mid n$
+
+**1.12** : Two integers are relatively prime, if there is no one prime that can divides both of them
+
+**1.13** : Let $a, b_1, b_2, ..., b_r$ be integers. Then $gcd(a, b_1, b_2, ..., b_r) = 1$ if and only if $gcd(a, b_i) = 1$ for $i = 1,2,...,r$
+
+**1.14** : Let $p$ be prime and $k$ be an integer $(0 < k < p)$. Then the binomial coefficient : 
+$$\binom{p}{k} = \dfrac{p!}{k!(p - k)!}$$
+is divisible by $p$
+
+**1.15** : An integer $a$ is called ***square-free*** if it is not divisible by by the square of any integer greater than 1. Then we have :
++ Something
++ Something
