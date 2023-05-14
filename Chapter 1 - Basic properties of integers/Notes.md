@@ -210,5 +210,46 @@ $$\binom{p}{k} = \dfrac{p!}{k!(p - k)!}$$
 is divisible by $p$
 
 **1.15** : An integer $a$ is called ***square-free*** if it is not divisible by by the square of any integer greater than 1. Then we have :
-+ Something
-+ Something
++ $a$ is square-free if and only if $a = \pm p_1p_2...p_r$, where $p_i$'s are distinct primes
++ Every positive integer $n$ can be expressed uniquely as $n = ab^2$, where $a, b$ are positive integers, and $a$ is square-free
+
+
+## Section 3 : Some consequences of unique factorizations
+
+<ins> **Theorem 1.11** </ins>
+
+There are infinitely many primes
+
+For each prime $p$, we may define the function $\upsilon_p$ that maps ***non-zero integers*** to ***non-negative integers***, as follows : 
+
+> For every integers $n \neq 0$, if $n = p^em$, where $p \nmid m$, then $\upsilon_p(n) := e$
+
+Defining that, we can now write the factorization of $n$ into primes as :
+
+$$n = \pm \prod_p p^{v_p(n)}$$
+
+where the product is over all primes $p$.
+
+At first glance, this is supposed to be an infinite product, but many of its terms are equal to $1$, so this expression still makes sense.
+
+Observe that if $a, b$ are ***non-zero integers***, then :
+
+$$\upsilon_p(ab) = \upsilon_p(a) + \upsilon_p(b)$$
+
+$$a \mid b \Longleftrightarrow \upsilon_p(a)\leq \upsilon_p(b)$$
+
+From this, it is clear that :
+
+$$gcd(a, b) = \prod_p p^{min(v_p(a), v_p(b))}$$
+
+<ins> **Least Common Multiple** </ins>
+
+For $a, b \in \mathbb{Z}$, a ***common multiple*** of $a$ and $b$ is an integer $m$ such that $a \mid m$ and $b \mid m$. Such an $m$ is called ***least common multiple*** if :
++ $m$ is ***non-negative***
++ $m$ divides all common multiples of $a$ and $b$.
+
+We denote the ***least common multiple*** of $a, b$ as $lcm(a, b)$
+
+The rest material are somewhat unneccessary to omit, so I wont in to much details.
+
+Aaaand we are done with Chapter 1 !
